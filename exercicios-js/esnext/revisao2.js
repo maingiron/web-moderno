@@ -8,7 +8,7 @@ const lexico2 = lexico1.bind({})
 lexico1()
 lexico2()
 
-// Parametro default
+// Parâmetro default
 function log(texto = 'Node') {
     console.log(texto)
 }
