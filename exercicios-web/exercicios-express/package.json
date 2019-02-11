@@ -4,12 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon",
+    "production": "pm2 start index.js --name appx-backend"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.16.4"
+    "express": "^4.16.4",
+    "pm2": "^3.2.9"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.10"
   }
 }
