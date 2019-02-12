@@ -1,6 +1,11 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
-import BomDia from './components/BomDia'
+import Multiplos from './components/Multiplos'
 
-ReactDOM.render(<BomDia nome="Raphael" />, document.getElementById('root'))
+ReactDOM.render(
+  <div>
+    <Multiplos.BoaTarde nome="Ana" />
+    <Multiplos.BoaNoite nome="Bia" />
+  </div>
+  , document.getElementById('root'))
