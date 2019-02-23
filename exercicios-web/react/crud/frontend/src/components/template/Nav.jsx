@@ -4,7 +4,7 @@ import './Nav.css'
 export default props => 
   <aside className="menu-area">
     <nav className="menu">
-      {/* Refatorar em casa! */}
+      {/* Refatorar -- Criar um componente de NavItem */}
       <a href="#/">
         <i className="fa fa-home"></i> Início
       </a>
