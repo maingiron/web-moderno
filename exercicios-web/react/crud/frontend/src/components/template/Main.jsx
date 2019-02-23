@@ -1,5 +1,5 @@
 import React from 'react'
-import './Main'
+import './Main.css'
 import Header from './Header'
 
 export default props => 
