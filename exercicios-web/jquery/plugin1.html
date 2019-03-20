@@ -31,6 +31,7 @@
                 const expressoesComChaves = conteudo.match(/\{\{.+\}\}/g)
                 const expressoes = expressoesComChaves.map(retirarChaves)
                 const resultados = expressoes.map(e => eval(e))
+                
                 let conteudoFinal = conteudo
                 for (let i = 0; i < expressoesComChaves.length; i++) {
                     conteudoFinal = conteudoFinal.replace(
