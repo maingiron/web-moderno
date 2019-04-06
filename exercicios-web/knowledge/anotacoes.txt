@@ -6,6 +6,12 @@ abc123
 \l -> listar
 \c nome_banco -> conectar ao banco
 
+----------------------------------------
+
+knex migrate:make create_table_users
+knex migrate:latest
+knex migrate:rollback
+
 -----------------------------------------
 
 Iniciar o mongod através do .exe dentro 
