@@ -1,4 +1,5 @@
 psql postgres postgres
+psql -U postgres
 abc123
 
 
