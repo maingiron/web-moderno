@@ -1,0 +1,29 @@
+psql postgres postgres
+abc123
+
+
+\l -> listar
+\c nome_banco -> conectar ao banco
+
+-----------------------------------------
+
+Iniciar o mongod através do .exe dentro 
+da pasta do Mongo
+
+-----------------------------------------
+
+versao final
+
+frontend:
+npm run serve -- --port 8081
+
+backend
+npm start
+
+----------------------------------------
+
+versao inicial
+
+
+backend
+npm start
