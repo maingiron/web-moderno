@@ -42,6 +42,7 @@ export default {
 
     .user-dropdown:hover {
         background-color: rgba(0, 0, 0, 0.2);
+        cursor: pointer;
     }
 
     .user-dropdown-img {
