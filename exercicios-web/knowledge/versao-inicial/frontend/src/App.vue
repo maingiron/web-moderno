@@ -1,16 +1,16 @@
 <template>
-	<div id="app" :class="{'hide-menu': !isMenuVisible}">
+	<div id="app" :class="{'hide-menu': !isMenuVisible || user}">
 		<Header title="Cod3r - Base de Conhecimento" 
-			:hideToggle="false" 
-			:hideUserDropdown="false" />
-		<Menu />
+			:hideToggle="!user" 
+			:hideUserDropdown="!user" />
+		<Menu v-if="user" />
 		<Content />
 		<Footer />
 	</div>
 </template>
 
 <script>
-import { mapState } from 'vuex'
+import { mapState } from "vuex"
 import Header from "@/components/template/Header"
 import Menu from "@/components/template/Menu"
 import Content from "@/components/template/Content"
@@ -19,7 +19,7 @@ import Footer from "@/components/template/Footer"
 export default {
 	name: "App",
 	components: { Header, Menu, Content, Footer },
-	computed: mapState(['isMenuVisible'])
+	computed: mapState(["isMenuVisible", "user"])
 }
 </script>
 
