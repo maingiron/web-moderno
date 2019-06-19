@@ -31,14 +31,14 @@ export default {
 	},
 	methods: {
 		async validateToken() {
-			this.validateToken = true
+			this.validatingToken = true
 
 			const json = localStorage.getItem(userKey)
 			const userData = JSON.parse(json)
 			this.$store.commit("setUser", null)
 
 			if (!userData) {
-				this.validateToken = false
+				this.validatingToken = false
 				this.$router.push({ name: "auth" })
 				return
 			}
@@ -56,7 +56,7 @@ export default {
 		}
 	},
 	created() {
-		this.validatingToken()
+		this.validateToken()
 	}
 }
 </script>
