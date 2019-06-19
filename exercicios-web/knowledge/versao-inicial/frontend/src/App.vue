@@ -1,5 +1,5 @@
 <template>
-	<div id="app" :class="{'hide-menu': !isMenuVisible || user}">
+	<div id="app" :class="{'hide-menu': !isMenuVisible || !user}">
 		<Header title="Cod3r - Base de Conhecimento" 
 			:hideToggle="!user" 
 			:hideUserDropdown="!user" />
@@ -84,13 +84,13 @@ export default {
 		grid-template-areas: 
 			"header header"
 			"menu content"
-			"menu footer"
+			"menu footer";
 	}
 
 	#app.hide-menu {
 		grid-template-areas: 
 			"header header"
 			"content content"
-			"footer footer"
+			"footer footer";
 	}
 </style>
