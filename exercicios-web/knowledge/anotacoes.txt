@@ -1,4 +1,4 @@
-psql postgres postgres
+﻿psql postgres postgres
 psql -U postgres
 abc123
 
@@ -34,3 +34,6 @@ versao inicial
 
 backend
 npm start
+
+frontend
+npm run serve
